@@ -1,0 +1,6 @@
+porise.envs.real.RealEnv.observation\_space
+===========================================
+
+.. currentmodule:: porise.envs.real
+
+.. autoattribute:: RealEnv.observation_space

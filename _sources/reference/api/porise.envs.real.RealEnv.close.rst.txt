@@ -1,0 +1,6 @@
+porise.envs.real.RealEnv.close
+==============================
+
+.. currentmodule:: porise.envs.real
+
+.. automethod:: RealEnv.close

@@ -1,0 +1,6 @@
+porise.envs.real.RealEnv.reward\_range
+======================================
+
+.. currentmodule:: porise.envs.real
+
+.. autoattribute:: RealEnv.reward_range

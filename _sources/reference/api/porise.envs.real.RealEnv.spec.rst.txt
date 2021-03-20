@@ -1,0 +1,6 @@
+porise.envs.real.RealEnv.spec
+=============================
+
+.. currentmodule:: porise.envs.real
+
+.. autoattribute:: RealEnv.spec
