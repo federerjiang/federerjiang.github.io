@@ -1,0 +1,6 @@
+porise.model.algorithms.mab.BetaThompsonSampling.reset
+======================================================
+
+.. currentmodule:: porise.model.algorithms.mab
+
+.. automethod:: BetaThompsonSampling.reset

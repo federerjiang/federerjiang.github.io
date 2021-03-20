@@ -1,0 +1,6 @@
+porise.model.algorithms.mab.UCB1.reset
+======================================
+
+.. currentmodule:: porise.model.algorithms.mab
+
+.. automethod:: UCB1.reset

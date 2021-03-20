@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.LogisticTS2.default\_prediction
+============================================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: LogisticTS2.default_prediction

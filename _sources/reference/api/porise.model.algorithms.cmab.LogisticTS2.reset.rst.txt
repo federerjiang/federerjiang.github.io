@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.LogisticTS2.reset
+==============================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: LogisticTS2.reset

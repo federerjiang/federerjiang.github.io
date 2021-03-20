@@ -1,0 +1,6 @@
+porise.envs.synthetic.BernoulliEnv.observation\_space
+=====================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: BernoulliEnv.observation_space

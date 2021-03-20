@@ -1,0 +1,25 @@
+porise.model.algorithms.mab.UCB1
+================================
+
+.. currentmodule:: porise.model.algorithms.mab
+
+.. autoclass:: UCB1
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      UCB1.default_prediction
+      UCB1.predict
+      UCB1.reset
+      UCB1.train
+
+
+
+
+   
+

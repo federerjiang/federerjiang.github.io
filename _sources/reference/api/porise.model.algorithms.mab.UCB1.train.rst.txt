@@ -1,0 +1,6 @@
+porise.model.algorithms.mab.UCB1.train
+======================================
+
+.. currentmodule:: porise.model.algorithms.mab
+
+.. automethod:: UCB1.train

@@ -1,0 +1,6 @@
+porise.model.algorithms.mab.BetaThompsonSampling.predict
+========================================================
+
+.. currentmodule:: porise.model.algorithms.mab
+
+.. automethod:: BetaThompsonSampling.predict

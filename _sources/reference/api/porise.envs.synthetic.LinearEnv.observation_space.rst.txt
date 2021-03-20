@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.observation\_space
+==================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: LinearEnv.observation_space

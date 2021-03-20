@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.observation\_space
+==================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: CosineEnv.observation_space

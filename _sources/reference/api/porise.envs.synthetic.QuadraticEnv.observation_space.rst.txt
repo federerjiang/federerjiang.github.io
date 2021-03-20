@@ -1,0 +1,6 @@
+porise.envs.synthetic.QuadraticEnv.observation\_space
+=====================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: QuadraticEnv.observation_space

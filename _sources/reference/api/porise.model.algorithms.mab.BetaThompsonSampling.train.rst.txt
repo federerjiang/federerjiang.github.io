@@ -1,0 +1,6 @@
+porise.model.algorithms.mab.BetaThompsonSampling.train
+======================================================
+
+.. currentmodule:: porise.model.algorithms.mab
+
+.. automethod:: BetaThompsonSampling.train

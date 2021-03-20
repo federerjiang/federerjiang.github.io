@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.FTRL\_LR.default\_prediction
+=========================================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: FTRL_LR.default_prediction

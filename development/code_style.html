@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pandas code style guide &#8212; Porise 0.1 documentation</title>
+    <title>porise code style guide &#8212; Porise 0.1 documentation</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -39,8 +39,8 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Test organization" href="test_writing.html" />
-    <link rel="prev" title="pandas docstring guide" href="contributing_docstring.html" />
+    <link rel="next" title="Release notes" href="../whatsnew/index.html" />
+    <link rel="prev" title="porise docstring guide" href="contributing_docstring.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
   </head>
@@ -67,7 +67,7 @@
         </li>
         
         <li class="nav-item ">
-            <a class="nav-link" href="../user_guide/index.html">User Guide</a>
+            <a class="nav-link" href="../user_guide/index.html">Tutorial</a>
         </li>
         
         <li class="nav-item ">
@@ -121,37 +121,19 @@
           
             
                 <li class="">
-                    <a href="contributing.html">Contributing to pandas</a>
+                    <a href="contributing.html">Contributing to porise</a>
                 </li>
             
           
             
                 <li class="">
-                    <a href="contributing_docstring.html">pandas docstring guide</a>
+                    <a href="contributing_docstring.html">porise docstring guide</a>
                 </li>
             
           
             
                 <li class="active">
-                    <a href="">pandas code style guide</a>
-                </li>
-            
-          
-            
-                <li class="">
-                    <a href="test_writing.html">Test organization</a>
-                </li>
-            
-          
-            
-                <li class="">
-                    <a href="policies.html">Policies</a>
-                </li>
-            
-          
-            
-                <li class="">
-                    <a href="roadmap.html">Roadmap</a>
+                    <a href="">porise code style guide</a>
                 </li>
             
           
@@ -168,78 +150,9 @@
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
               
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#patterns" class="nav-link">Patterns</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#using-foo-class" class="nav-link">Using foo.__class__</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#string-formatting" class="nav-link">String formatting</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#concatenated-strings" class="nav-link">Concatenated strings</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#using-f-strings" class="nav-link">Using f-strings</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#white-spaces" class="nav-link">White spaces</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#representation-function-aka-repr" class="nav-link">Representation function (aka ‘repr()’)</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#imports-aim-for-absolute" class="nav-link">Imports (aim for absolute)</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#testing" class="nav-link">Testing</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#failing-tests" class="nav-link">Failing tests</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#do-not-use-pytest-xfail" class="nav-link">Do not use pytest.xfail</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#using-pytest-mark-xfail" class="nav-link">Using pytest.mark.xfail</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#miscellaneous" class="nav-link">Miscellaneous</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#reading-from-a-url" class="nav-link">Reading from a url</a>
-        </li>
-    
-            </ul>
-        </li>
     
     </ul>
 </nav>
@@ -254,209 +167,11 @@
               
               <div>
                 
-  <div class="section" id="pandas-code-style-guide">
-<span id="code-style"></span><h1>pandas code style guide<a class="headerlink" href="#pandas-code-style-guide" title="Permalink to this headline">¶</a></h1>
-<div class="contents local topic" id="table-of-contents">
-<p class="topic-title">Table of contents:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#patterns" id="id1">Patterns</a></p>
-<ul>
-<li><p><a class="reference internal" href="#using-foo-class" id="id2">Using foo.__class__</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#string-formatting" id="id3">String formatting</a></p>
-<ul>
-<li><p><a class="reference internal" href="#concatenated-strings" id="id4">Concatenated strings</a></p>
-<ul>
-<li><p><a class="reference internal" href="#using-f-strings" id="id5">Using f-strings</a></p></li>
-<li><p><a class="reference internal" href="#white-spaces" id="id6">White spaces</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#representation-function-aka-repr" id="id7">Representation function (aka ‘repr()’)</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#imports-aim-for-absolute" id="id8">Imports (aim for absolute)</a></p></li>
-<li><p><a class="reference internal" href="#testing" id="id9">Testing</a></p>
-<ul>
-<li><p><a class="reference internal" href="#failing-tests" id="id10">Failing tests</a></p></li>
-<li><p><a class="reference internal" href="#do-not-use-pytest-xfail" id="id11">Do not use <code class="docutils literal notranslate"><span class="pre">pytest.xfail</span></code></a></p></li>
-<li><p><a class="reference internal" href="#using-pytest-mark-xfail" id="id12">Using <code class="docutils literal notranslate"><span class="pre">pytest.mark.xfail</span></code></a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#miscellaneous" id="id13">Miscellaneous</a></p>
-<ul>
-<li><p><a class="reference internal" href="#reading-from-a-url" id="id14">Reading from a url</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-<p>pandas follows the <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP8</a>
-standard and uses <a class="reference external" href="https://black.readthedocs.io/en/stable/">Black</a>
-and <a class="reference external" href="https://flake8.pycqa.org/en/latest/">Flake8</a> to ensure a
-consistent code format throughout the project. We encourage you to use
-<a class="reference internal" href="contributing.html#contributing-pre-commit"><span class="std std-ref">pre-commit</span></a> to automatically run <code class="docutils literal notranslate"><span class="pre">black</span></code>,
-<code class="docutils literal notranslate"><span class="pre">flake8</span></code>, <code class="docutils literal notranslate"><span class="pre">isort</span></code>, and related code checks when you make a git commit.</p>
-<div class="section" id="patterns">
-<h2><a class="toc-backref" href="#id1">Patterns</a><a class="headerlink" href="#patterns" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="using-foo-class">
-<h3><a class="toc-backref" href="#id2">Using foo.__class__</a><a class="headerlink" href="#using-foo-class" title="Permalink to this headline">¶</a></h3>
-<p>pandas uses ‘type(foo)’ instead ‘foo.__class__’ as it is making the code more
-readable.
-For example:</p>
-<p><strong>Good:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span> <span class="o">=</span> <span class="s2">&quot;bar&quot;</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">foo</span><span class="p">)</span>
-</pre></div>
-</div>
-<p><strong>Bad:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span> <span class="o">=</span> <span class="s2">&quot;bar&quot;</span>
-<span class="n">foo</span><span class="o">.</span><span class="vm">__class__</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="string-formatting">
-<h2><a class="toc-backref" href="#id3">String formatting</a><a class="headerlink" href="#string-formatting" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="concatenated-strings">
-<h3><a class="toc-backref" href="#id4">Concatenated strings</a><a class="headerlink" href="#concatenated-strings" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="using-f-strings">
-<h4><a class="toc-backref" href="#id5">Using f-strings</a><a class="headerlink" href="#using-f-strings" title="Permalink to this headline">¶</a></h4>
-<p>pandas uses f-strings formatting instead of ‘%’ and ‘.format()’ string formatters.</p>
-<p>The convention of using f-strings on a string that is concatenated over several lines,
-is to prefix only the lines containing values which need to be interpreted.</p>
-<p>For example:</p>
-<p><strong>Good:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span> <span class="o">=</span> <span class="s2">&quot;old_function&quot;</span>
-<span class="n">bar</span> <span class="o">=</span> <span class="s2">&quot;new_function&quot;</span>
-
-<span class="n">my_warning_message</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="sa">f</span><span class="s2">&quot;Warning, </span><span class="si">{</span><span class="n">foo</span><span class="si">}</span><span class="s2"> is deprecated, &quot;</span>
-    <span class="s2">&quot;please use the new and way better &quot;</span>
-    <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">bar</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-<p><strong>Bad:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span> <span class="o">=</span> <span class="s2">&quot;old_function&quot;</span>
-<span class="n">bar</span> <span class="o">=</span> <span class="s2">&quot;new_function&quot;</span>
-
-<span class="n">my_warning_message</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="sa">f</span><span class="s2">&quot;Warning, </span><span class="si">{</span><span class="n">foo</span><span class="si">}</span><span class="s2"> is deprecated, &quot;</span>
-    <span class="sa">f</span><span class="s2">&quot;please use the new and way better &quot;</span>
-    <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">bar</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="white-spaces">
-<h4><a class="toc-backref" href="#id6">White spaces</a><a class="headerlink" href="#white-spaces" title="Permalink to this headline">¶</a></h4>
-<p>Only put white space at the end of the previous line, so
-there is no whitespace at the beginning of the concatenated string.</p>
-<p>For example:</p>
-<p><strong>Good:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">example_string</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="s2">&quot;Some long concatenated string, &quot;</span>
-    <span class="s2">&quot;with good placement of the &quot;</span>
-    <span class="s2">&quot;whitespaces&quot;</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-<p><strong>Bad:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">example_string</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="s2">&quot;Some long concatenated string,&quot;</span>
-    <span class="s2">&quot; with bad placement of the&quot;</span>
-    <span class="s2">&quot; whitespaces&quot;</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="representation-function-aka-repr">
-<h3><a class="toc-backref" href="#id7">Representation function (aka ‘repr()’)</a><a class="headerlink" href="#representation-function-aka-repr" title="Permalink to this headline">¶</a></h3>
-<p>pandas uses ‘repr()’ instead of ‘%r’ and ‘!r’.</p>
-<p>The use of ‘repr()’ will only happen when the value is not an obvious string.</p>
-<p>For example:</p>
-<p><strong>Good:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="nb">str</span>
-<span class="sa">f</span><span class="s2">&quot;Unknown received value, got: </span><span class="si">{</span><span class="nb">repr</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
-</pre></div>
-</div>
-<p><strong>Good:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="nb">str</span>
-<span class="sa">f</span><span class="s2">&quot;Unknown received type, got: &#39;</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&#39;&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="imports-aim-for-absolute">
-<h2><a class="toc-backref" href="#id8">Imports (aim for absolute)</a><a class="headerlink" href="#imports-aim-for-absolute" title="Permalink to this headline">¶</a></h2>
-<p>In Python 3, absolute imports are recommended. Using absolute imports, doing something
-like <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">string</span></code> will import the string module rather than <code class="docutils literal notranslate"><span class="pre">string.py</span></code>
-in the same directory. As much as possible, you should try to write out
-absolute imports that show the whole import chain from top-level pandas.</p>
-<p>Explicit relative imports are also supported in Python 3 but it is not
-recommended to use them. Implicit relative imports should never be used
-and are removed in Python 3.</p>
-<p>For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># preferred</span>
-<span class="kn">import</span> <span class="nn">pandas.core.common</span> <span class="k">as</span> <span class="nn">com</span>
-
-<span class="c1"># not preferred</span>
-<span class="kn">from</span> <span class="nn">.common</span> <span class="kn">import</span> <span class="n">test_base</span>
-
-<span class="c1"># wrong</span>
-<span class="kn">from</span> <span class="nn">common</span> <span class="kn">import</span> <span class="n">test_base</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="testing">
-<h2><a class="toc-backref" href="#id9">Testing</a><a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="failing-tests">
-<h3><a class="toc-backref" href="#id10">Failing tests</a><a class="headerlink" href="#failing-tests" title="Permalink to this headline">¶</a></h3>
-<p>See <a class="reference external" href="https://docs.pytest.org/en/latest/skipping.html">https://docs.pytest.org/en/latest/skipping.html</a> for background.</p>
-</div>
-<div class="section" id="do-not-use-pytest-xfail">
-<h3><a class="toc-backref" href="#id11">Do not use <code class="docutils literal notranslate"><span class="pre">pytest.xfail</span></code></a><a class="headerlink" href="#do-not-use-pytest-xfail" title="Permalink to this headline">¶</a></h3>
-<p>Do not use this method. It has the same behavior as <code class="docutils literal notranslate"><span class="pre">pytest.skip</span></code>, namely
-it immediately stops the test and does not check if the test will fail. If
-this is the behavior you desire, use <code class="docutils literal notranslate"><span class="pre">pytest.skip</span></code> instead.</p>
-</div>
-<div class="section" id="using-pytest-mark-xfail">
-<h3><a class="toc-backref" href="#id12">Using <code class="docutils literal notranslate"><span class="pre">pytest.mark.xfail</span></code></a><a class="headerlink" href="#using-pytest-mark-xfail" title="Permalink to this headline">¶</a></h3>
-<p>Use this method if a test is known to fail but the manner in which it fails
-is not meant to be captured. It is common to use this method for a test that
-exhibits buggy behavior or a non-implemented feature. If
-the failing test has flaky behavior, use the argument <code class="docutils literal notranslate"><span class="pre">strict=False</span></code>. This
-will make it so pytest does not fail if the test happens to pass.</p>
-<p>Prefer the decorator <code class="docutils literal notranslate"><span class="pre">&#64;pytest.mark.xfail</span></code> and the argument <code class="docutils literal notranslate"><span class="pre">pytest.param</span></code>
-over usage within a test so that the test is appropriately marked during the
-collection phase of pytest. For xfailing a test that involves multiple
-parameters, a fixture, or a combination of these, it is only possible to
-xfail during the testing phase. To do so, use the <code class="docutils literal notranslate"><span class="pre">request</span></code> fixture:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pytest</span>
-
-<span class="k">def</span> <span class="nf">test_xfail</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-    <span class="n">request</span><span class="o">.</span><span class="n">node</span><span class="o">.</span><span class="n">add_marker</span><span class="p">(</span><span class="n">pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">xfail</span><span class="p">(</span><span class="n">reason</span><span class="o">=</span><span class="s2">&quot;Indicate why here&quot;</span><span class="p">))</span>
-</pre></div>
-</div>
-<p>xfail is not to be used for tests involving failure due to invalid user arguments.
-For these tests, we need to verify the correct exception type and error message
-is being raised, using <code class="docutils literal notranslate"><span class="pre">pytest.raises</span></code> instead.</p>
-</div>
-</div>
-<div class="section" id="miscellaneous">
-<h2><a class="toc-backref" href="#id13">Miscellaneous</a><a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="reading-from-a-url">
-<h3><a class="toc-backref" href="#id14">Reading from a url</a><a class="headerlink" href="#reading-from-a-url" title="Permalink to this headline">¶</a></h3>
-<p><strong>Good:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pandas.io.common</span> <span class="kn">import</span> <span class="n">urlopen</span>
-
-<span class="k">with</span> <span class="n">urlopen</span><span class="p">(</span><span class="s2">&quot;http://www.google.com&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">url</span><span class="p">:</span>
-    <span class="n">raw_text</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
+  <div class="section" id="porise-code-style-guide">
+<span id="code-style"></span><h1>porise code style guide<a class="headerlink" href="#porise-code-style-guide" title="Permalink to this headline">¶</a></h1>
+<p>Porise follows the <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP8</a>
+standard.</p>
+<p>More detailed code format will be added later.</p>
 </div>
 
 
@@ -465,8 +180,8 @@ is being raised, using <code class="docutils literal notranslate"><span class="p
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="contributing_docstring.html" title="previous page">pandas docstring guide</a>
-    <a class='right-next' id="next-link" href="test_writing.html" title="next page">Test organization</a>
+    <a class='left-prev' id="prev-link" href="contributing_docstring.html" title="previous page">porise docstring guide</a>
+    <a class='right-next' id="next-link" href="../whatsnew/index.html" title="next page">Release notes</a>
 
               </div>
               

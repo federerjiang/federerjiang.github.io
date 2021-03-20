@@ -1,0 +1,6 @@
+porise.model.algorithms.mab.UCB1.default\_prediction
+====================================================
+
+.. currentmodule:: porise.model.algorithms.mab
+
+.. automethod:: UCB1.default_prediction

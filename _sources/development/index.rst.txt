@@ -15,6 +15,3 @@ Development
     contributing
     contributing_docstring
     code_style
-    test_writing
-    policies
-    roadmap

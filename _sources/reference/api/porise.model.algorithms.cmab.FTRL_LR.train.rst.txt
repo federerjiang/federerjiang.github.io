@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.FTRL\_LR.train
+===========================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: FTRL_LR.train

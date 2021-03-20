@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.LogisticTS1.predict
+================================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: LogisticTS1.predict

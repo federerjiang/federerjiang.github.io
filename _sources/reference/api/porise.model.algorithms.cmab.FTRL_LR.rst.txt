@@ -1,0 +1,25 @@
+porise.model.algorithms.cmab.FTRL\_LR
+=====================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. autoclass:: FTRL_LR
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      FTRL_LR.default_prediction
+      FTRL_LR.predict
+      FTRL_LR.reset
+      FTRL_LR.train
+
+
+
+
+   
+

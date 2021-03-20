@@ -3,7 +3,7 @@
 .. _user_guide:
 
 ==========
-User Guide
+Tutorial
 ==========
 
 The User Guide covers all of pandas by topic area. Each of the subsections

@@ -1,0 +1,25 @@
+porise.model.algorithms.cmab.LogisticTS1
+========================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. autoclass:: LogisticTS1
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      LogisticTS1.default_prediction
+      LogisticTS1.predict
+      LogisticTS1.reset
+      LogisticTS1.train
+
+
+
+
+   
+
