@@ -15,6 +15,7 @@ porise.envs.synthetic.LinearEnv
       
       LinearEnv.close
       LinearEnv.get_reward_func
+      LinearEnv.get_user_state
       LinearEnv.reset
       LinearEnv.reset_features
       LinearEnv.reset_rewards
@@ -33,7 +34,6 @@ porise.envs.synthetic.LinearEnv
       :toctree:
       
       LinearEnv.action_space
-      LinearEnv.observation_space
       LinearEnv.reward_range
       LinearEnv.spec
 

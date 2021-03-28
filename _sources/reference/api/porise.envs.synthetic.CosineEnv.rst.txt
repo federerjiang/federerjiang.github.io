@@ -15,6 +15,7 @@ porise.envs.synthetic.CosineEnv
       
       CosineEnv.close
       CosineEnv.get_reward_func
+      CosineEnv.get_user_state
       CosineEnv.reset
       CosineEnv.reset_features
       CosineEnv.reset_rewards
@@ -33,7 +34,6 @@ porise.envs.synthetic.CosineEnv
       :toctree:
       
       CosineEnv.action_space
-      CosineEnv.observation_space
       CosineEnv.reward_range
       CosineEnv.spec
 

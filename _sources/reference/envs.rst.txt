@@ -12,7 +12,9 @@ envs
    :toctree: api/
 
    envs.Env 
-   envs.real.RealEnv 
+   envs.real.RealEnvBase
+   envs.real.ChainOfferEnv
+   envs.real.ChainOfferEnvV2
    envs.synthetic.BernoulliEnv
    envs.synthetic.LinearEnv
    envs.synthetic.QuadraticEnv 

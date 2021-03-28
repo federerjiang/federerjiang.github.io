@@ -30,7 +30,6 @@ porise.envs.synthetic.BernoulliEnv
       :toctree:
       
       BernoulliEnv.action_space
-      BernoulliEnv.observation_space
       BernoulliEnv.reward_range
       BernoulliEnv.spec
 

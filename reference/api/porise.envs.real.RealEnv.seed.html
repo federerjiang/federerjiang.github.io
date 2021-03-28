@@ -61,7 +61,7 @@
         
         
         <li class="nav-item ">
-            <a class="nav-link" href="../../getting_started/index.html">Getting started</a>
+            <a class="nav-link" href="../../getting_started/index.html">Get started</a>
         </li>
         
         <li class="nav-item ">
@@ -147,28 +147,6 @@
                 
   <div class="section" id="porise-envs-real-realenv-seed">
 <h1>porise.envs.real.RealEnv.seed<a class="headerlink" href="#porise-envs-real-realenv-seed" title="Permalink to this headline">¶</a></h1>
-<dl class="py method">
-<dt id="porise.envs.real.RealEnv.seed">
-<code class="sig-prename descclassname">RealEnv.</code><code class="sig-name descname">seed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">seed</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#porise.envs.real.RealEnv.seed" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the seed for this env’s random number generator(s).
-Note:</p>
-<blockquote>
-<div><p>Some environments use multiple pseudorandom number generators.
-We want to capture all such seeds used in order to ensure that
-there aren’t accidental correlations between multiple generators.</p>
-</div></blockquote>
-<dl class="simple">
-<dt>Returns:</dt><dd><dl class="simple">
-<dt>list&lt;bigint&gt;: Returns the list of seeds used in this env’s random</dt><dd><p>number generators. The first value in the list should be the
-“main” seed, or the value which a reproducer should pass to
-‘seed’. Often, the main seed equals the provided ‘seed’, but
-this won’t be true if seed=None, for example.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
 </div>
 
 

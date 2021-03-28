@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting started &#8212; Porise 0.1 documentation</title>
+    <title>Get started &#8212; Porise 0.1 documentation</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -63,7 +63,7 @@
         
         
         <li class="nav-item active">
-            <a class="nav-link" href="">Getting started</a>
+            <a class="nav-link" href="">Get started</a>
         </li>
         
         <li class="nav-item ">
@@ -140,11 +140,15 @@
     <ul class="nav section-nav flex-column">
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#installation" class="nav-link">Installation</a>
+            <a href="#modules-of-porise" class="nav-link">Modules of porise</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
             <a href="#intro-to-porise" class="nav-link">Intro to porise</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#installation" class="nav-link">Installation</a>
         </li>
     
     </ul>
@@ -160,15 +164,27 @@
               
               <div>
                 
-  <div class="section" id="getting-started">
-<span id="id1"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone bitbucket/path/to/porise.git
-<span class="nb">cd</span> porise/
-pip install .
-</pre></div>
-</div>
+  <div class="section" id="get-started">
+<span id="getting-started"></span><h1>Get started<a class="headerlink" href="#get-started" title="Permalink to this headline">¶</a></h1>
+<p>Porise is a python framework for building personalized online learning-based recommendation system.</p>
+<p>Porise <strong>was designed with the following purposes in mind</strong>:</p>
+<ul class="simple">
+<li><p>Give users perfect control over their experiments. To this end, a strong
+emphasis is laid on <a class="reference external" href="https://federerjiang.github.io/reference/index.html">API documentation</a>
+, which we have tried to make as clear and precise as possible by pointing out every
+detail of the algorithms.</p></li>
+<li><p>Provide <a class="reference external" href="https://federerjiang.github.io/reference/envs.html">gym-like envs</a> for emulating the online recommendation environment.
+A recommendation model makes prediction based on user/item/context features observed from the env,
+and env gives a reward signal as feedback to the recommendation model. Envs can be created with both synthetic or real-world datasets.</p></li>
+<li><p>Provide various ready-to-use <a class="reference external" href="https://federerjiang.github.io/reference/model.html">online learning algorithms</a>
+such as MAB (multi arm bandit), contextual MAB, and others.</p></li>
+<li><p>Make it easy to implement new algorithm ideas.</p></li>
+<li><p>Provide <a class="reference external" href="https://federerjiang.github.io/reference/simulator.html">tools</a>
+to evaluate, analyse and compare the algorithms’ performance.</p></li>
+</ul>
+<div class="section" id="modules-of-porise">
+<h2>Modules of porise<a class="headerlink" href="#modules-of-porise" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/index_api.svg"><img alt="../_images/index_api.svg" src="../_images/index_api.svg" width="600" /></a>
 </div>
 <div class="section" id="intro-to-porise">
 <span id="gentle-intro"></span><h2>Intro to porise<a class="headerlink" href="#intro-to-porise" title="Permalink to this headline">¶</a></h2>
@@ -246,6 +262,14 @@ following properties in mind</strong>:</p>
 </li>
 <li><p><strong>Deployable in Product ?</strong></p></li>
 </ul>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone bitbucket/path/to/porise.git
+<span class="nb">cd</span> porise/
+pip install .
+</pre></div>
+</div>
 </div>
 </div>
 

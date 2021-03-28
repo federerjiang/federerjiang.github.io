@@ -76,7 +76,7 @@ recommender systems that needs to train and serve a model online.
                     <h5 class="card-title">Developer guide</h5>
                     <p class="card-text">Saw a typo in the documentation? Want to improve
                     existing functionalities? The contributing guidelines will guide
-                    you through the process of improving pandas.</p>
+                    you through the process of improving porise.</p>
 
 .. container:: custom-button
 

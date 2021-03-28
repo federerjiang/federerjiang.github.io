@@ -15,6 +15,7 @@ porise.envs.synthetic.QuadraticEnv
       
       QuadraticEnv.close
       QuadraticEnv.get_reward_func
+      QuadraticEnv.get_user_state
       QuadraticEnv.reset
       QuadraticEnv.reset_features
       QuadraticEnv.reset_rewards
@@ -33,7 +34,6 @@ porise.envs.synthetic.QuadraticEnv
       :toctree:
       
       QuadraticEnv.action_space
-      QuadraticEnv.observation_space
       QuadraticEnv.reward_range
       QuadraticEnv.spec
 

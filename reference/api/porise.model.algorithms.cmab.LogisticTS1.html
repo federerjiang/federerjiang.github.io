@@ -39,7 +39,7 @@
     <script src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="porise.model.algorithms.cmab.LogisticTS1.default_prediction" href="porise.model.algorithms.cmab.LogisticTS1.default_prediction.html" />
+    <link rel="next" title="porise.model.algorithms.cmab.LogisticTS2" href="porise.model.algorithms.cmab.LogisticTS2.html" />
     <link rel="prev" title="porise.model.algorithms.cmab.LinUCB.train" href="porise.model.algorithms.cmab.LinUCB.train.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -63,7 +63,7 @@
         
         
         <li class="nav-item ">
-            <a class="nav-link" href="../../getting_started/index.html">Getting started</a>
+            <a class="nav-link" href="../../getting_started/index.html">Get started</a>
         </li>
         
         <li class="nav-item ">
@@ -175,7 +175,7 @@
           
             
                 <li class="">
-                    <a href="../simulator.html">envs</a>
+                    <a href="../simulator.html">simulator</a>
                 </li>
             
           
@@ -213,44 +213,6 @@
                 
   <div class="section" id="porise-model-algorithms-cmab-logisticts1">
 <h1>porise.model.algorithms.cmab.LogisticTS1<a class="headerlink" href="#porise-model-algorithms-cmab-logisticts1" title="Permalink to this headline">¶</a></h1>
-<dl class="py class">
-<dt id="porise.model.algorithms.cmab.LogisticTS1">
-<em class="property">class </em><code class="sig-prename descclassname">porise.model.algorithms.cmab.</code><code class="sig-name descname">LogisticTS1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_arms</span></em>, <em class="sig-param"><span class="n">lambda_</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">5</span></em>, <em class="sig-param"><span class="n">arm_feat_dim</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">user_feat_dim</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">return_list</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#porise.model.algorithms.cmab.LogisticTS1" title="Permalink to this definition">¶</a></dt>
-<dd><p>Logistic Thompson Sampling, all arms share same parameters</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>n_arms: int</strong></dt><dd><p>Number of arms</p>
-</dd>
-<dt><strong>return_list: bool</strong></dt><dd><p>True: return the list of predicted logits of each arm
-False: return the index of the arm which has the largest logit</p>
-</dd>
-</dl>
-</dd>
-</dl>
-<p class="rubric">Methods</p>
-<table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="porise.model.algorithms.cmab.LogisticTS1.default_prediction.html#porise.model.algorithms.cmab.LogisticTS1.default_prediction" title="porise.model.algorithms.cmab.LogisticTS1.default_prediction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_prediction</span></code></a>()</p></td>
-<td><p>Might be Used when user features not ready. Due to the following reasons</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="porise.model.algorithms.cmab.LogisticTS1.predict.html#porise.model.algorithms.cmab.LogisticTS1.predict" title="porise.model.algorithms.cmab.LogisticTS1.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(state)</p></td>
-<td><p>Predict rewards/logits for each arm To be defined in children classes.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="porise.model.algorithms.cmab.LogisticTS1.reset.html#porise.model.algorithms.cmab.LogisticTS1.reset" title="porise.model.algorithms.cmab.LogisticTS1.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>()</p></td>
-<td><p>Initialize variables of policy To be defined in children classes.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="porise.model.algorithms.cmab.LogisticTS1.train.html#porise.model.algorithms.cmab.LogisticTS1.train" title="porise.model.algorithms.cmab.LogisticTS1.train"><code class="xref py py-obj docutils literal notranslate"><span class="pre">train</span></code></a>(action_list, state_list, reward_list)</p></td>
-<td><p>Batch update alpha and beta values</p></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 </div>
 
 
@@ -260,7 +222,7 @@ False: return the index of the arm which has the largest logit</p>
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="porise.model.algorithms.cmab.LinUCB.train.html" title="previous page">porise.model.algorithms.cmab.LinUCB.train</a>
-    <a class='right-next' id="next-link" href="porise.model.algorithms.cmab.LogisticTS1.default_prediction.html" title="next page">porise.model.algorithms.cmab.LogisticTS1.default_prediction</a>
+    <a class='right-next' id="next-link" href="porise.model.algorithms.cmab.LogisticTS2.html" title="next page">porise.model.algorithms.cmab.LogisticTS2</a>
 
               </div>
               

@@ -63,7 +63,7 @@
         
         
         <li class="nav-item ">
-            <a class="nav-link" href="../getting_started/index.html">Getting started</a>
+            <a class="nav-link" href="../getting_started/index.html">Get started</a>
         </li>
         
         <li class="nav-item ">
@@ -128,7 +128,15 @@
                         </li>
                     
                         <li class="">
-                            <a href="api/porise.envs.real.RealEnv.html">porise.envs.real.RealEnv</a>
+                            <a href="api/porise.envs.real.RealEnvBase.html">porise.envs.real.RealEnvBase</a>
+                        </li>
+                    
+                        <li class="">
+                            <a href="api/porise.envs.real.ChainOfferEnv.html">porise.envs.real.ChainOfferEnv</a>
+                        </li>
+                    
+                        <li class="">
+                            <a href="api/porise.envs.real.ChainOfferEnvV2.html">porise.envs.real.ChainOfferEnvV2</a>
                         </li>
                     
                         <li class="">
@@ -148,6 +156,18 @@
                         </li>
                     
                     </ul>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="model.html">model</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="simulator.html">simulator</a>
                 </li>
             
           
@@ -192,16 +212,22 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/porise.envs.Env.html#porise.envs.Env" title="porise.envs.Env"><code class="xref py py-obj docutils literal notranslate"><span class="pre">envs.Env</span></code></a>()</p></td>
-<td><p>The main Porise Env class. It encapsulates an environment with arbitrary behind-the-scenes dynamics. The main API methods that users of this class need to know are:     step     reset     seed     close And set the following attributes:     action_space: The Space object corresponding to valid actions     observation_space: The Space object corresponding to valid observations     reward_range: A tuple corresponding to the min and max possible rewards Note: a default reward range set to [-inf,+inf] already exists. Set it if you want a narrower range. The methods are accessed publicly as “step”, “reset”, etc.</p></td>
+<td><p>The core Porise Env class.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="api/porise.envs.real.RealEnv.html#porise.envs.real.RealEnv" title="porise.envs.real.RealEnv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">envs.real.RealEnv</span></code></a>([rat_log_path, …])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="api/porise.envs.real.RealEnvBase.html#porise.envs.real.RealEnvBase" title="porise.envs.real.RealEnvBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">envs.real.RealEnvBase</span></code></a>(rat_log_path[, …])</p></td>
+<td><p>RealEnvBase need to load offline user features and calcualte online behavior features</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/porise.envs.real.ChainOfferEnv.html#porise.envs.real.ChainOfferEnv" title="porise.envs.real.ChainOfferEnv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">envs.real.ChainOfferEnv</span></code></a>(rat_log_path[, …])</p></td>
+<td><p>RealEnv need to load offline user features and calcualte online behavior features</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/porise.envs.real.ChainOfferEnvV2.html#porise.envs.real.ChainOfferEnvV2" title="porise.envs.real.ChainOfferEnvV2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">envs.real.ChainOfferEnvV2</span></code></a>(rat_log_path[, …])</p></td>
 <td><p>RealEnv need to load offline user features and calcualte online behavior features</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="api/porise.envs.synthetic.BernoulliEnv.html#porise.envs.synthetic.BernoulliEnv" title="porise.envs.synthetic.BernoulliEnv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">envs.synthetic.BernoulliEnv</span></code></a>(n_arm, arm_probs)</p></td>
 <td><p><p class="rubric">Attributes</p>
 </p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="api/porise.envs.synthetic.LinearEnv.html#porise.envs.synthetic.LinearEnv" title="porise.envs.synthetic.LinearEnv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">envs.synthetic.LinearEnv</span></code></a>(n_arm, feature_dim)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="api/porise.envs.synthetic.LinearEnv.html#porise.envs.synthetic.LinearEnv" title="porise.envs.synthetic.LinearEnv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">envs.synthetic.LinearEnv</span></code></a>(n_arms[, …])</p></td>
 <td><p><p class="rubric">Attributes</p>
 </p></td>
 </tr>
