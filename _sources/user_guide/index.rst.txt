@@ -19,8 +19,3 @@ Further information on any specific method can be obtained in the
 
 .. If you update this toctree, also update the manual toctree in the
    main index.rst.template
-
-.. toctree::
-    :maxdepth: 2
-
-    10min

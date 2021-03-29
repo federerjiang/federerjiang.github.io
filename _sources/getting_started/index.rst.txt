@@ -24,11 +24,6 @@ Porise **was designed with the following purposes in mind**:
   to evaluate, analyse and compare the algorithms' performance.
 
 
-Modules of porise 
-------------
-.. image:: ../_static/index_api.svg
-   :width: 600
-
 
 
 
